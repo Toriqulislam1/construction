@@ -446,36 +446,32 @@
                                     <h2 class="title white">Building with passion precision and pride</h2>
                                 </div>
                                 <div class="messages-box">
-                                    <form action="#">
+                                    <form action="{{ route('contact-form') }}" method="POST">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="input-group">
-                                                    <input type="text" placeholder="Your Name">
+                                                    <input type="text" name="full_name" required placeholder="Your Name">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="input-group">
-                                                    <input type="text" placeholder="Your Email">
+                                                    <input type="text" name="email_address" required placeholder="Your Email">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="input-group">
-                                                    <input type="text" placeholder="Phone Number">
+                                                    <input type="text" name="mobile" required placeholder="Phone Number">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="input-group">
-                                                    <select>
-                                                        <option selected>Choose a Option</option>
-                                                        <option value="">Mymensingh</option>
-                                                        <option value="">Dhaka</option>
-                                                        <option value="">Khulna</option>
-                                                    </select>
+                                                    <input type="text" name="subject" required placeholder="location">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="input-group">
-                                                    <textarea rows="4" placeholder="Message here.."></textarea>
+                                                    <textarea rows="4" name="message" required placeholder="Message here.."></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">

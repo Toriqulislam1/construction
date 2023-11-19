@@ -20,13 +20,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services <i class="fas fa-chevron-down"></i></a>
-                        <ul class="list-unstyled sub-menu">
-                            <li><a href="services.html">Service Single</a></li>
-                            <li><a href="service-details.html">Service Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Projects <i class="fas fa-chevron-down"></i></a>
                         <ul class="list-unstyled sub-menu">
                             <li><a href="project.html">Project</a></li>
@@ -91,13 +84,7 @@
                         <li class="sub-mobile-menu">
                             <a href="#">Home <i class="fas fa-chevron-down float-end"></i></a>
                         </li>
-                        <li class="sub-mobile-menu">
-                            <a href="#">Services <i class="fas fa-chevron-down float-end"></i></a>
-                            <ul class="list-unstyled">
-                                <li><a href="services.html">Service Single</a></li>
-                                <li><a href="service-details.html">Service Details</a></li>
-                            </ul>
-                        </li>
+
                         <li class="sub-mobile-menu">
                             <a href="#">Projects <i class="fas fa-chevron-down float-end"></i></a>
                             <ul class="list-unstyled">

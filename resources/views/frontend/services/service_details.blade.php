@@ -66,7 +66,7 @@ Service Details
                             <li><i class="far fa-check-circle"></i>
                                 Knew About Fonts text posuere</li>
                         </ul>
-                        <a href="contact.html" class="request-service-btn uppercaser">Request service</a>
+                        <a href="{{ route('contact-us') }}" class="request-service-btn uppercaser">Request service</a>
                     </div>
                 </div>
             </div>
