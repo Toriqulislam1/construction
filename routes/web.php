@@ -214,15 +214,8 @@ Route::prefix('client')->group(function(){
 });
 
 
-// Frontend Product Details Page url
-Route::get('/services/details/{id}/{slug}', [IndexController::class, 'ServicesDetails']);
-
-// Frontend SubCategory wise Data
-Route::get('/services/subcategory/{subcat_id}/{slug}', [IndexController::class, 'SubCatWiseServices']);
-
-// Frontend Sub-SubCategory wise Data
-Route::get('/childcategory/services/{childcat_id}/{slug}', [IndexController::class, 'ChildCatWiseServices']);
-
+// Frontend service Details Page url
+Route::get('/services/details/{id}', [IndexController::class, 'ServicesDetails'])->name('ServicesDetails');
 
 // contact
 Route::get('contact/page', [ContactController::class, 'Contact'])->name('contact-page');

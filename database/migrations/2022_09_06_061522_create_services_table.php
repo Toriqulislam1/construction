@@ -15,10 +15,7 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->integer('category_id');
-            $table->integer('subcategory_id');
-            $table->integer('childcategory_id');
-            $table->string('content_slide_title');
+            $table->string('title_thamble');
             $table->string('breadcrumb');
             $table->string('content_title');
             $table->string('content_descrip');

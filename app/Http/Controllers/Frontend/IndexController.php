@@ -28,12 +28,10 @@ class IndexController extends Controller
 
 
 
-    public function ServicesDetails($id,$slug){
+    public function ServicesDetails($id){
 		Services::find($id)->increment('views');
 		$services = Services::findOrFail($id);
 
-
-		$cat_id = $services->category_id;
 	 	return view('frontend.services.service_details',compact('services'));
 
 	}
