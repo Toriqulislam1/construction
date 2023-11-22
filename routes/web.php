@@ -20,6 +20,7 @@ use App\Http\Controllers\Backend\PolicyController;
 use App\Http\Controllers\Backend\IndController;
 use App\Http\Controllers\Backend\basicsettingController;
 use App\Http\Controllers\Backend\slideController;
+use App\Http\Controllers\Backend\projectController;
 
 
 
@@ -71,6 +72,27 @@ Route::prefix('admin')->group(function (){
 
 
 /*-------------End Admin route--------*/
+
+
+
+// Admin project All Routes
+
+Route::prefix('project')->group(function(){
+
+    Route::get('/add', [projectController::class, 'projecView'])->name('project-add');
+    Route::get('/manage', [projectController::class, 'projectManage'])->name('project-manage');
+
+     Route::post('/store', [projectController::class, 'ProjectStore'])->name('project-store');
+
+    // Route::get('/edit/{id}', [CategoryController::class, 'CategoryEdit'])->name('category.edit');
+
+    // Route::post('/update/{id}', [CategoryController::class, 'CategoryUpdate'])->name('category.update');
+
+    // Route::get('/delete/{id}', [CategoryController::class, 'CategoryDelete'])->name('category.delete');
+
+    });
+
+
 
 // Admin Category All Routes
 

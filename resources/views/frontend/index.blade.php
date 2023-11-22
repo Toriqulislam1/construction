@@ -26,9 +26,7 @@
                         <h2 class="banner-title wow fadeInLeft" data-wow-delay=".4s">Importer, 1st Class Contractor & Supplier</h2>
                         <h6 class="banner-title wow fadeInLeft" data-wow-delay=".4s">TO WHOM IT MAY CONCERN</h6>
                         <p class="wow fadeInLeft" data-wow-delay=".6s">We, Inventive Infrastructures Consultants & Engineering, are pleased to associate for the supplying of stone, sand and any kind of general order. Inventive Infrastructures Consultants & Engineering emerged as one of
-                            fastest growing trading companies in Bangladesh. The maiden journey was started having a trade area
-                            focusing on stone supply & construction works, which is still soaring as the flagship business of the
-                            Company. Inventive Infrastructures Consultants & Engineering was established as Partnership Company in 2022, in the belief that there was a space in the marketplace for a construction company that offered customer service and quality of performance as the priority in its operations. Since its commencement Inventive Infrastructures Consultants & Engineering has supplied a hugs quantity of stone, sand and other general order to the client. We hope, you will find our credentials in line with your requirement for this project. We are confident that we would deliver the high quality of services that you require. We shall be happy to submit further information as you may require.
+                            fastest growing trading companies in Bangladesh.
                             <br>
                             You’re sincerely,<br>
                             For Inventive Infrastructures Consultants & Engineering<br>
@@ -76,7 +74,10 @@
                             <h2 class="title">Inventive Infrastructures Consultants & Engineering</h2>
                             <span class="title">Importer, 1st Class Contractor & Supplier</span>
                         </div>
-                        <p> Inventive Infrastructures Consultants & Engineering. was formed in 2022 with the objective of making a  border base and platform to fill up, as far as possible, the vacuums in the field of sophisticated  engineering constructions and two assists the country to forge ahead with its ambitious gigantic  development program. Initially the company was focusing more on the trading of stone, sands and any kind of general orders but for last 1.5 years Inventive Infrastructures Consultants & Engineering is doing construction projects (as main and sub-contractor) under various departments of Government of  Bangladesh, where exceptional service and quality is rewarded and where the client not only can be completely happy with their project but also enjoy delivering a project on time and many cases much before the completion date. Inventive Infrastructures Consultants & Engineering actively pursued and maintained its position by always structuring the company to provide the quality in workmanship, service, staff and technology and by consistently updating our system, encouraging  the training and professional development of our people. Inventive Infrastructures Consultants & Engineering is totally focused on its goal of delivering service and  result in the high end residential and commercial market places. This company attitude is supported by providing stringent qualification tests on all our supplier and sub-contractors to ensure that they too work to our philosophy of quality and service.
+                        <p> Inventive Infrastructures Consultants & Engineering. was formed in 2022 with the objective of making a  border base and platform to fill up, as far as possible, the vacuums in the field of sophisticated
+                            engineering constructions and two assists the country to forge ahead with its ambitious gigantic  development program. Initially the company was focusing more on the trading of stone,
+                            sands and any kind of general orders but for last 1.5 years Inventive Infrastructures Consultants & Engineering is doing construction projects (as main and sub-contractor) under various departments of Government of  Bangladesh,
+                             where exceptional service and quality is rewarded and where the client not only can be completely happy with their project but also enjoy delivering a project on time and many cases much before the completion date
 
                         </p>
                         <div class="about-list">
@@ -315,7 +316,7 @@
                             </div>
                             <div class="text">
                                 <h4 class="title">Contact with us</h4>
-                                <h3 class="number"><a href="tel:(405)555-0128">(405) 555-0128</a></h3>
+                                <h3 class="number"><a href="tel:+8801999912461">+8801999912461</a></h3>
                             </div>
                         </div>
                     </div>
