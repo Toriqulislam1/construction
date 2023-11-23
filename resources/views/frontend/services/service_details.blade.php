@@ -58,14 +58,6 @@ Service Details
                     <div class="project-block">
                         <h6 class="title">Big project</h6>
                         <p>Aliquam eros justo, posuere loboa et matti ullamcorper posuere viverra.</p>
-                        <ul class="list-unstyled list-info">
-                            <li><i class="far fa-check-circle"></i>
-                                Mistakes To Avoid to dum Aliquam.</li>
-                            <li><i class="far fa-check-circle"></i>
-                                Your Startup industry stan Aliquam </li>
-                            <li><i class="far fa-check-circle"></i>
-                                Knew About Fonts text posuere</li>
-                        </ul>
                         <a href="{{ route('contact-us') }}" class="request-service-btn uppercaser">Request service</a>
                     </div>
                 </div>

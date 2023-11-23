@@ -92,8 +92,7 @@ about us
                     <div class="phone-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <h3 class="text-white title">Need help? Call us Today <a href="tel:+201-555-0124">+201-
-                            555-0124</a></h3>
+                    <h3 class="text-white title">Need help? Call us Today <a href="tel:+8801999912461">+8801999912461</a></h3>
                     <p class="text-white">Lorem Ipsum is simply dummy text of the printing </p>
                 </div>
             </div>

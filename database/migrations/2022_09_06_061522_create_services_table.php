@@ -22,6 +22,12 @@ return new class extends Migration
             $table->string('long_descrip');
             $table->string('thamble');
             $table->integer('status')->default(0);
+            
+            $table->string('detail_short_title');
+            $table->string('category_name');
+            $table->string('detail_short_desc');
+            $table->string('detail_project_name');
+            $table->string('detail_project_desc');
             $table->timestamps();
         });
     }
