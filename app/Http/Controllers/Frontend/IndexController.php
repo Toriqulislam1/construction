@@ -14,6 +14,7 @@ use App\Models\Services;
 use App\Models\Childcategory;
 use App\Models\Contact;
 use App\Models\Blog;
+use App\Models\project;
 
 class IndexController extends Controller
 {
@@ -33,6 +34,14 @@ class IndexController extends Controller
 		$services = Services::findOrFail($id);
 
 	 	return view('frontend.services.service_details',compact('services'));
+
+	}
+
+    public function ProjectDetails($id){
+
+		$projects = project::findOrFail($id);
+
+	 	return view('frontend.project.project_details',compact('projects'));
 
 	}
 

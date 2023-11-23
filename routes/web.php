@@ -81,14 +81,19 @@ Route::prefix('project')->group(function(){
 
     Route::get('/add', [projectController::class, 'projecView'])->name('project-add');
     Route::get('/manage', [projectController::class, 'projectManage'])->name('project-manage');
+    Route::post('/store', [projectController::class, 'ProjectStore'])->name('project-store');
 
-     Route::post('/store', [projectController::class, 'ProjectStore'])->name('project-store');
+    Route::get('/inactive/{id}', [projectController::class, 'ProjectInactive'])->name('project.inactive');
 
-    // Route::get('/edit/{id}', [CategoryController::class, 'CategoryEdit'])->name('category.edit');
+    Route::get('/active/{id}', [projectController::class, 'ProjectActive'])->name('Project.active');
 
-    // Route::post('/update/{id}', [CategoryController::class, 'CategoryUpdate'])->name('category.update');
+    Route::get('/delete/{id}', [projectController::class, 'ProjectDelete'])->name('project.delete');
 
-    // Route::get('/delete/{id}', [CategoryController::class, 'CategoryDelete'])->name('category.delete');
+    Route::get('/edit/{id}', [projectController::class, 'ProjectEdit'])->name('project.edit');
+
+    Route::post('/update', [projectController::class, 'ProjectUpdate'])->name('project-update');
+
+
 
     });
 
@@ -238,6 +243,8 @@ Route::prefix('client')->group(function(){
 
 // Frontend service Details Page url
 Route::get('/services/details/{id}', [IndexController::class, 'ServicesDetails'])->name('ServicesDetails');
+// Frontend project Details Page url
+Route::get('/project/details/{id}', [IndexController::class, 'ProjectDetails'])->name('projec-details');
 
 // contact
 Route::get('contact/page', [ContactController::class, 'Contact'])->name('contact-page');

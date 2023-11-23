@@ -112,12 +112,12 @@
     <!-- about us part end -->
 
     @php
-    $services = App\Models\Services::where('status',1)->orderBy('id','DESC')->limit(8)->get();
+    $services = App\Models\Services::where('status',1)->orderBy('id','DESC')->get();
     @endphp
 
 
     <!-- our services part start -->
-    <section class="services-area-one">
+    <section class="services-area-one" id="service">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -190,8 +190,11 @@
     </section>
     <!-- our services part end -->
 
+    @php
+    $projects = App\Models\project::where('status',1)->orderBy('id','DESC')->get();
+    @endphp
     <!-- recent work part start -->
-    <section class="recent-work-area-one">
+    <section class="recent-work-area-one" id="project">
         <div class="recent-work-one-bg">
             <div class="container">
                 <div class="row">
@@ -206,20 +209,23 @@
             </div>
             <div class="container-fluid">
                 <div class="row recent-work-slider-one">
+                    @foreach ($projects as $item )
+
+
                     <div class="col-lg-4">
                         <div class="project-item-one position-relative">
                             <div class="image">
-                                <a href="project-details.html" class="d-block w-100">
-                                    <img src="{{ asset('frontend/assets/img/works/work-1.png') }}" alt="work-1" class="img-fluid w-100">
+                                <a href="{{ route('projec-details',$item->id) }}" class="d-block w-100">
+                                    <img src="{{ asset($item->thumbnail_img) }}" alt="work-1" class="img-fluid w-100">
                                 </a>
                             </div>
                             <div
                                 class="info position-absolute bottom-0 start-0 w-100 d-flex justify-content-between align-items-center">
                                 <div class="text">
                                     <h4 class="title">
-                                        <a href="project-details.html">Concrete Repair</a>
+                                        <a href="project-details.html">{{ $item->thum_project_name }}</a>
                                     </h4>
-                                    <p>Lorem Ipsum is simply dummy</p>
+                                    <p>{{ $item->thum_project_title  }}</p>
                                 </div>
                                 <div class="plus">
                                     <a href="project-details.html"><i class="fas fa-plus"></i></a>
@@ -227,69 +233,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="project-item-one position-relative">
-                            <div class="image">
-                                <a href="project-details.html" class="d-block w-100">
-                                    <img src="{{ asset('frontend/assets/img/works/work-2.png') }}" alt="work-2" class="img-fluid w-100">
-                                </a>
-                            </div>
-                            <div
-                                class="info position-absolute bottom-0 start-0 w-100 d-flex justify-content-between align-items-center">
-                                <div class="text">
-                                    <h4 class="title">
-                                        <a href="project-details.html">Concrete Repair</a>
-                                    </h4>
-                                    <p>Lorem Ipsum is simply dummy</p>
-                                </div>
-                                <div class="plus">
-                                    <a href="project-details.html"><i class="fas fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="project-item-one position-relative">
-                            <div class="image">
-                                <a href="project-details.html" class="d-block w-100">
-                                    <img src="{{ asset('frontend/assets/img/works/work-3.png') }}" alt="work-3" class="img-fluid w-100">
-                                </a>
-                            </div>
-                            <div
-                                class="info position-absolute bottom-0 start-0 w-100 d-flex justify-content-between align-items-center">
-                                <div class="text">
-                                    <h4 class="title">
-                                        <a href="project-details.html">Concrete Repair</a>
-                                    </h4>
-                                    <p>Lorem Ipsum is simply dummy</p>
-                                </div>
-                                <div class="plus">
-                                    <a href="project-details.html"><i class="fas fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="project-item-one position-relative">
-                            <div class="image">
-                                <a href="project-details.html" class="d-block w-100">
-                                    <img src="{{ asset('frontend/assets/img/works/work-1.png') }}" alt="work-1" class="img-fluid w-100">
-                                </a>
-                            </div>
-                            <div
-                                class="info position-absolute bottom-0 start-0 w-100 d-flex justify-content-between align-items-center">
-                                <div class="text">
-                                    <h4 class="title">
-                                        <a href="project-details.html">Concrete Repair</a>
-                                    </h4>
-                                    <p>Lorem Ipsum is simply dummy</p>
-                                </div>
-                                <div class="plus">
-                                    <a href="project-details.html"><i class="fas fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
+
                 </div>
             </div>
         </div>

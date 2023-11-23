@@ -13,18 +13,17 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home </a>
+                        <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects <i class="fas fa-chevron-down"></i></a>
-                        <ul class="list-unstyled sub-menu">
-                            <li><a href="project.html">Project</a></li>
-                            <li><a href="project-details.html">Project Details</a></li>
-                        </ul>
+                        <a class="nav-link" href="#project">Projects</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">service</i></a>
                     </li>
 
 
@@ -86,9 +85,9 @@
                         </li>
 
                         <li class="sub-mobile-menu">
-                            <a href="#">Projects <i class="fas fa-chevron-down float-end"></i></a>
+                            <a href="#work">Projects <i class="fas fa-chevron-down float-end"></i></a>
                             <ul class="list-unstyled">
-                                <li><a href="project.html">Projects</a></li>
+                                <li><a href="#work">Projects</a></li>
                                 <li><a href="project-details.html">Project Details</a></li>
                             </ul>
                         </li>
