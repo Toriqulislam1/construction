@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo">
-                        <img src="{{ asset('frontend/assets/img/logo/logo.png') }}" alt="logo">
+                        <img src="{{ asset($setting->logo) }}" alt="logo">
                     </div>
                     <div class="bars">
                         <i class="fas fa-bars"></i>
@@ -76,14 +76,14 @@
         <div class="mobile-menu-overlay"></div>
         <div class="mobile-menu-main">
             <div class="logo">
-                <a href="index.html"><img src="{{ asset('frontend/assets/img/logo/logo.png') }}" alt="logo"></a>
+                <a href="index.html"><img src="{{ asset($setting->logo) }}" alt="logo"></a>
             </div>
             <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
             <div class="menu-body">
                 <div class="menu-list">
                     <ul class="list-unstyled">
                         <li class="sub-mobile-menu">
-                            <a href="#">Home <i class="fas fa-chevron-down float-end"></i></a>
+                            <a href="{{ url('/') }}">Home <i class="fas fa-chevron-down float-end"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
@@ -96,11 +96,11 @@
             </div>
             <div class="social-icon">
                 <ul class="list-unstyled">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a href="{{$setting->facebook}}"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="{{$setting->instagram}}"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="{{$setting->twitter}}"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="{{$setting->linkedin }}"><i class="fab fa-instagram"></i></a></li>
+
                 </ul>
             </div>
         </div>

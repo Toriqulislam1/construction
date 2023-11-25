@@ -284,7 +284,7 @@
                         <p>It is a long established fact that a reader will be distracted by the readablejk content
                             of a page when
                             looking at its layout.</p>
-                        <a href="about-us.html" class="common-btn uppercase">read More <i class="fas fa-plus"></i></a>
+                        <a href="{{ route('work-process-btn') }}" class="common-btn uppercase">read More <i class="fas fa-plus"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-5 ms-auto">

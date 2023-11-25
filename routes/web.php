@@ -343,7 +343,7 @@ Route::prefix('ind')->group(function(){
 
 
 });
-// Footer page setup
+// Footer page setup + btn
 
 Route::prefix('profile')->group(function(){
 
@@ -353,6 +353,7 @@ Route::prefix('profile')->group(function(){
     Route::get('/workplace/health/safety', [footerpageController::class, 'workplaceHealthSafety'])->name('workplace-health-safety');
     Route::get('/organization/values', [footerpageController::class, 'organizationValues'])->name('organization-values');
     Route::get('/merits', [footerpageController::class, 'merits'])->name('merits');
+    Route::get('/work/proces', [footerpageController::class, 'workProcess'])->name('work-process-btn');
 
 });
 

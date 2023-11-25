@@ -1,3 +1,8 @@
+@php
+    $setting = App\Models\setting::find(1);
+@endphp
+
+
 <!-- footer part start -->
 <footer class="footer-area-one">
     <div class="footer-area-one-bg">
@@ -15,10 +20,10 @@
                                 <p>INVENTIVE INFRASTRUCTURES CONSULTANT & ENGINEERING emerged as one of the fastest growing companies in Bangladesh.</p>
                                 <div class="social">
                                     <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="{{ $setting->twitter  }}"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="{{ $setting->instagram }}"><i class="fab fa-instagram"></i></a></li>
+                                       
                                     </ul>
                                 </div>
                             </div>

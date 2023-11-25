@@ -32,5 +32,9 @@ class footerpageController extends Controller
 
         return view('frontend.footer-page.merit');
     }//end
+    function workProcess(){
+
+        return view('frontend.footer-page.btn.workProcess');
+    }//end
 
 }
