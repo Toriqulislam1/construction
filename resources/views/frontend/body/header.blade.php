@@ -1,10 +1,15 @@
+
+@php
+    $setting = App\Models\setting::find(1);
+
+@endphp
 <!-- header part start -->
 <div id="header-fixed-height"></div>
 <header class="header-area-one" id="sticky-header">
     <nav class="navbar navbar-expand-lg d-none d-lg-block">
         <div class="container-fluid">
             <a class="navbar-brand me-0" href="{{ url('/') }}">
-                <img src="{{ asset('frontend/assets/img/logo/logo.png') }}" alt="logo">
+                <img src="{{ asset($setting->logo) }}" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,15 +23,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
                     </li>
-
-                    <li class="nav-item">
+                    {{--  <li class="nav-item">
                         <a class="nav-link" href="#project">Projects</i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#service">service</i></a>
-                    </li>
-
-
+                    </li>  --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('contact-us') }}">Contact</a>
                     </li>
@@ -34,10 +36,10 @@
                 <div class="header-right-info d-flex align-items-center">
                     <div class="social">
                         <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="{{ $setting->facebook  }}"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="{{ $setting->instagram   }}"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="{{ $setting->twitter }}"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="{{ $setting->linkedin   }}"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div class="help-number d-flex align-items-center">
@@ -47,8 +49,8 @@
                         <div class="info">
                             <p>Need help?</p>
                             <h6>
-                                <a href="tel:+8801999912461">
-                                    +8801999912461
+                                <a href="tel:{{ $setting->phone    }}">
+                                    {{ $setting->phone }}
                                 </a>
                             </h6>
                         </div>
@@ -83,18 +85,11 @@
                         <li class="sub-mobile-menu">
                             <a href="#">Home <i class="fas fa-chevron-down float-end"></i></a>
                         </li>
-
-                        <li class="sub-mobile-menu">
-                            <a href="#work">Projects <i class="fas fa-chevron-down float-end"></i></a>
-                            <ul class="list-unstyled">
-                                <li><a href="#work">Projects</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
                         </li>
-
-
-                        <li class="sub-mobile-menu">
-                            <a href="contact.html">Contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('contact-us') }}">Contact</a>
                         </li>
                     </ul>
                 </div>

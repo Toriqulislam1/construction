@@ -48,26 +48,27 @@ contact us
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form action="#">
+                        <form action="{{ route('contact-form') }}" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="input-group">
-                                        <input type="text" placeholder="Your name">
+                                        <input type="text"  name="full_name" placeholder="Your name">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="input-group">
-                                        <input type="text" placeholder="Email">
+                                        <input type="text" name="email_address" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="input-group">
-                                        <input type="text" placeholder="Phone">
+                                        <input type="text"  name="mobile" placeholder="Phone">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-group">
-                                        <textarea placeholder="Messege"></textarea>
+                                        <textarea name="message" placeholder="Messege"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

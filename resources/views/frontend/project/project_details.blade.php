@@ -72,7 +72,7 @@ about us
             </div>
             <div class="project-details-information">
                 <h2 class="project-details-title">{{ $projects->details_title}}</h2>
-                <p>{!! $projects->details_title!!}</p>
+                <p>{!! $projects->long_desc !!}</p>
             </div>
         </div>
     </section>

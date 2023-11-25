@@ -19,7 +19,7 @@ class basicsettingController extends Controller
 
 
         $oldImage = $request->old_logo;
-		unlink($oldImage);
+		// unlink($oldImage);
 
         $image = $request->file('logo');
     	$name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();

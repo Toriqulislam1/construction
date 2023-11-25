@@ -48,16 +48,14 @@ Service Details
             <div class="col-lg-4">
                 <div class="service-right-sidebar">
                     <div class="project-title-info">
-                        <h3 class="service-sidebar-title">The project is start</h3>
-                        <p class="sub-title">Planing, Real Estate</p>
-                        <p>Aliquam eros justo, posuere loborti vive rra laoreet matti ullamc orper poviverra
-                            Aliquam eros justo,
-                            posuere </p>
+                        <h3 class="service-sidebar-title">{{ $services->detail_short_title }}</h3>
+                        <p class="sub-title">{{ $services->category_name}}</p>
+                        <p>{{ $services->detail_short_desc   }} </p>
                     </div>
 
                     <div class="project-block">
-                        <h6 class="title">Big project</h6>
-                        <p>Aliquam eros justo, posuere loboa et matti ullamcorper posuere viverra.</p>
+                        <h6 class="title">{{ $services->detail_project_name   }}</h6>
+                        <p>{{ $services->detail_project_desc}}</p>
                         <a href="{{ route('contact-us') }}" class="request-service-btn uppercaser">Request service</a>
                     </div>
                 </div>

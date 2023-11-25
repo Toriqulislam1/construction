@@ -211,7 +211,6 @@
                 <div class="row recent-work-slider-one">
                     @foreach ($projects as $item )
 
-
                     <div class="col-lg-4">
                         <div class="project-item-one position-relative">
                             <div class="image">
@@ -223,12 +222,12 @@
                                 class="info position-absolute bottom-0 start-0 w-100 d-flex justify-content-between align-items-center">
                                 <div class="text">
                                     <h4 class="title">
-                                        <a href="project-details.html">{{ $item->thum_project_name }}</a>
+                                        <a href="{{ route('projec-details',$item->id) }}">{{ $item->thum_project_name }}</a>
                                     </h4>
                                     <p>{{ $item->thum_project_title  }}</p>
                                 </div>
                                 <div class="plus">
-                                    <a href="project-details.html"><i class="fas fa-plus"></i></a>
+                                    <a href="{{ route('projec-details',$item->id) }}"><i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>

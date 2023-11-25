@@ -20,8 +20,6 @@ class ContentController extends Controller
 
 	public function StoreContent(Request $request){
 
-        return $request->all();
-        
 		$image = $request->file('breadcrumb');
     	$name_gen = hexdec(uniqid()).'.'.$image->getClientOriginalExtension();
     	Image::make($image)->resize(917,1000)->save('upload/services/'.$name_gen);
@@ -47,12 +45,11 @@ class ContentController extends Controller
 			'thamble' => $save,
 			'status' => 1,
 
-			'detail_short_title' => $request->detail_short_title,
-			'category_name' => $request->category_name,
-			'detail_short_desc' => $request->detail_short_desc,
-			'detail_project_name' => $request->detail_project_name,
-			'detail_project_desc' => $request->detail_project_desc,
-
+			'detail_short_title' => $request->sub_title,
+			'category_name' => $request->cat_name,
+			'detail_short_desc' => $request->s_dst,
+			'detail_project_name' => $request->p_name,
+			'detail_project_desc' => $request->p_desc,
       		'created_at' => Carbon::now(),
 
 

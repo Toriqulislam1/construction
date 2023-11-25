@@ -100,7 +100,7 @@
 					@enderror
 					</div>
 	</div> <!---end--->
-	<div class="form-group">
+	{{--  <div class="form-group">
 					<h5>pinterest <span class="text-danger">*</span></h5>
 					<div class="controls">
 					<input type="text" name="pinterest" class="form-control" value="{{$setting->pinterest}}" required="">
@@ -108,8 +108,8 @@
 					<span class="text-danger">{{ $message }}</span>
 					@enderror
 					</div>
-	</div> <!---end--->
-	<div class="form-group">
+	</div> <!---end--->  --}}
+	{{--  <div class="form-group">
 					<h5>google-plus <span class="text-danger">*</span></h5>
 					<div class="controls">
 					<input type="text" name="googleplus" class="form-control" value="{{$setting->googleplus}}" required="">
@@ -117,7 +117,7 @@
 					<span class="text-danger">{{ $message }}</span>
 					@enderror
 					</div>
-	</div> <!---end--->
+	</div> <!---end--->  --}}
 	<div class="form-group">
 					<h5>linkedin <span class="text-danger">*</span></h5>
 					<div class="controls">

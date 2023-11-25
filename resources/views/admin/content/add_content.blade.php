@@ -96,7 +96,7 @@
                                     <div class="form-group">
                                         <h5>sub title for detail page <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                            <input type="text" name="detail_short_title" class="form-control" required="">
+                                            <input type="text" name="sub_title" class="form-control" required="">
                                             @error('detail_short_title')
                                             <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -110,7 +110,7 @@
                                     <div class="form-group">
                                         <h5>Category Name <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                            <input type="text" name="category" class="form-control"  required="" >
+                                            <input type="text" name="cat_name" class="form-control"  required="" >
                                             @error('category_name')
                                             <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -122,7 +122,7 @@
                                     <div class="form-group">
                                         <h5> short description for sub title in detail page <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                        <input type="text" name="detail_short_desc" class="form-control" required="">
+                                        <input type="text" name="s_dst" class="form-control" required="">
                                         @error('content_title')
                                         <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -136,7 +136,7 @@
                                 <div class="form-group">
                                         <h5> Project Size <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                            <input type="text" name="detail_project_name" class="form-control"  required="" >
+                                            <input type="text" name="p_name" class="form-control"  required="" >
                                             @error('thamble')
                                             <span class="text-danger">{{ $message }}</span>
                                             @enderror
@@ -148,7 +148,7 @@
                                     <div class="form-group">
                                         <h5> Project Short Description  <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                    <textarea name="content_descrip" name="detail_project_desc" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
+                                    <textarea name="p_desc" id="textarea" class="form-control" required placeholder="Textarea text"></textarea>
                                         </div>
                                     </div>
                             </div> <!-- end col md 6 -->

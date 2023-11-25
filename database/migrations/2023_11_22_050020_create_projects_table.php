@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('end_date');
             $table->string('rating');
             $table->string('details_title');
-            $table->string('long_desc');
+            $table->text('long_desc');
             $table->string('status')->default(0);
             $table->timestamps();
         });
